@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "com-loading": "../../components/loading/loading"
+  },
+  "navigationBarTitleText": "设置参数"
+}

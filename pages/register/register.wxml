@@ -1,0 +1,26 @@
+<!--info.wxml-->
+<view class="contain">
+	<view class="page-body">
+		<view class="page-section">
+			<view class="section">
+				<text>手机号码:</text>
+				<input placeholder="手机号码" type="text" auto-focus model:value="{{mobile}}" />
+				<text wx:if="{{send}}"  class="sendMsg" bindtap="sendMsg">发送</text>
+				<text wx:if="{{alreadySend}}" class="sendMsg" bindtap="sendMsg">{{second+"s"}}</text>
+			</view>
+
+
+
+			<view class="section">
+				<text>验证码:</text>
+				<input placeholder="验证码" type="text" model:value="{{smsCode}}" />
+			</view>
+			<view class="btn-area">
+				<button class="btn" bindtap="onSubmit">绑定</button>
+			</view>
+		</view>
+	</view>
+	<view>
+		<text style="margin-left:80px;font-size:10px;"  >版权所有　广东能兴科技发展有限公司 V{{version}}</text>
+	</view>
+</view>

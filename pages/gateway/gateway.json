@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "com-loading": "../../components/loading/loading"
+  },
+  "navigationBarTitleText": "小网关"
+}

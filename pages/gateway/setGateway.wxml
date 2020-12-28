@@ -1,0 +1,68 @@
+<!--pages/setBell/relieveDevice.wxml-->
+
+<view class="content" data-weui-theme="{{theme}}">
+	<form bindsubmit="setting">
+		<view class="wx-form">
+			<!-- <view class="weui-form__text-area" style="height: 1em">
+				<h2 class="weui-form__title">设置参数</h2>
+				<textarea class="weui-textarea" disabled="false" maxlength="-1" style="height: 5em"
+					value="{{infoText}}"></textarea>
+			</view> -->
+
+			<view class="weui-form__control-area">
+
+				<view class="cu-form-group margin-top">
+					<view class="title">上网方式</view>
+					<picker bindchange="nwyChange" value="{{index}}" range="{{nwy}}">
+						<view class="picker">
+							{{currentNwy}}
+						</view>
+					</picker>
+				</view>
+
+				<view class="cu-form-group">
+					<view class="title">DHCP 模式</view>
+					<picker bindchange="dhcpChange" value="{{index}}" range="{{dhcp}}">
+						<view class="picker">
+							{{currentDhcp}}
+						</view>
+					</picker>
+				</view>
+
+				<view class="cu-form-group">
+					<view class="title">WIFI名称</view>
+					<input placeholder="填写wifi名称" value="{{wifissid}}" name="wifissid"></input>
+					<text class="cuIcon-locationfill text-blue" bindtap="getWifi">获取</text>
+				</view>
+
+				<view class="cu-form-group">
+					<view class="title">WIFI密码</view>
+					<input placeholder="填写wifi密码" value="{{wifipsw}}" name="wifipsw"></input>
+				</view>
+
+				<view class="cu-form-group">
+					<view class="title">IP地址</view>
+					<input placeholder="填写IP地址" value="{{ipAddress}}" name="ipAddress"></input>
+				</view>
+
+				<view class="cu-form-group">
+					<view class="title">网关</view>
+					<input placeholder="填写网关地址" value="{{gatewayAddress}}" name="gatewayAddress"></input>
+				</view>
+
+				<view class="cu-form-group">
+					<view class="title">子网掩码</view>
+					<input placeholder="填写子网掩码" value="{{netmask}}" name="netmask"></input>
+				</view>
+
+				<view class="cu-form-group">
+					<view class="title">DNS</view>
+					<input placeholder="填写DNS" value="{{dns}}" name="dns"></input>
+				</view>
+
+			</view>
+			<button style="margin: 30rpx 0" formType="submit" class="gateway_btn cu-btn bg-blue margin-tb-sm lg">提交</button>
+		</view>
+	</form>
+	<com-loading infoText="{{infoText}}" isShow="{{isShow}}" />
+</view>

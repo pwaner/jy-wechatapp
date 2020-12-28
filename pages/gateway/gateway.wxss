@@ -1,0 +1,62 @@
+.content {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.gateway {
+  width: 100%;
+}
+
+.scan {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.scan_text {
+  min-width: 120rpx;
+  color: #444;
+}
+
+.scan_input {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 40rpx;
+  height: 80rpx;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.scan_img {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 35rpx;
+  z-index: 9999;
+}
+
+button[disabled] {
+  background-color: #ccc;
+}
+
+.gateway_btn {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: none;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  margin-top: 40rpx;
+  font-size: 38rpx;
+}
+
+.gateway_btn:hover {
+  background-color: hsl(207, 70%, 44%);
+}

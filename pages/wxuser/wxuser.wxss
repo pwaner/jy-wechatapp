@@ -1,0 +1,31 @@
+
+.sendMsg {
+  font-size: 12;
+  margin-right: 0;
+  padding: 0;
+  height: inherit;
+  width: 80rpx;
+}
+.page-body-info {
+  padding-bottom: 0;
+  height: 230px;
+}
+.userinfo-avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+}
+.userinfo-nickname {
+  margin-top: 20rpx;
+  font-size: 38rpx;
+}
+.section {
+display: flex;
+margin: 16rpx;
+padding: 16rpx;
+border-bottom: 1rpx solid #CFD8DC;
+}
+
+.btn {
+background-color: #00E5EE;
+}

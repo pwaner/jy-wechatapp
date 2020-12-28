@@ -1,0 +1,58 @@
+<view class="contain">
+	<view class="page-body">
+		<view class="page-section">
+			<view class="page-body-info">
+				<block wx:if="{{isLogin === true}}">
+					<view class="page-body-title">用户信息</view>
+					<block wx:if="{{hasUserInfo === true}}">
+						<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+					</block>
+					<text class="userinfo-nickname">{{appSession.name}}</text>
+				</block>
+			</view>
+		</view>
+		<view class="weui-panel">
+			<view class="weui-panel__hd">设置</view>
+			<view class="weui-panel__bd">
+				<view class="weui-media-box weui-media-box_small-appmsg">
+					<view class="weui-cells">
+						<a class="weui-cell weui-cell_active weui-cell_access weui-cell_example">
+							<view class="weui-cell__hd">
+								<image src="../img/bell.png" alt style="width: 20px; height: 20px; margin-right: 16px; display: block;">
+								</image>
+							</view>
+							<view class="weui-cell__bd weui-cell_primary" bindtap="setBell">
+								<view>远程门铃</view>
+							</view>
+							<text class="weui-cell__ft"></text>
+						</a>
+					</view>
+				</view>
+			</view>
+
+			<view class="weui-panel__bd">
+				<view class="weui-media-box weui-media-box_small-appmsg">
+					<view class="weui-cells">
+						<a class="weui-cell weui-cell_active weui-cell_access weui-cell_example" bindtap="gateway">
+							<view class="weui-cell__hd">
+								<image src="../img/inter.png" alt="img"
+									style="width: 20px; height: 20px; margin-right: 16px; display: block;">
+								</image>
+							</view>
+							<view class="weui-cell__bd weui-cell_primary">
+								<view>小网关</view>
+							</view>
+							<text class="weui-cell__ft"></text>
+						</a>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view>
+		<view class="text_bottom">
+			<text style="font-size:28rpx;">版权所有　广东能兴科技发展有限公司 V{{version}}</text>
+		</view>
+
+	</view>
+</view>

@@ -1,0 +1,29 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<!-- <form bindsubmit="setting">
+		<view class="weui-form"> -->
+	<view class="weui-form__text-area">
+		<h2 class="weui-form__title">远程门铃</h2>
+		<textarea class="weui-textarea" disabled="false" maxlength="-1" style="height: 10em"
+			value="{{infoText}}"></textarea>
+		<view class="page__bd page__bd_spacing">
+			<view class="weui-cell weui-cell_active">
+				<view class="weui-cell__hd">
+					<label class="weui-label" style="width: 5em">识别码</label>
+				</view>
+				<view class="weui-cell__bd">
+					<input class="weui-input" name="wifissid" bindinput="bindKeyInput" placeholder="填写识别码" value="{{sufBtName}}"
+						placeholder-class="weui-input__placeholder"></input> 
+				</view> 
+				<!-- <a class="weui-btn weui-btn_mini weui-btn_default" bindtap="scanCode">扫码</a> -->
+				<button type="primary" bindtap="scanCode">扫码 </button>
+			</view>
+			<!-- <button type="primary" bindtap="scanCode">扫码 </button> -->
+			<button type="primary" disabled="{{searchDisabled}}" bindtap="searchDevice">连接 </button>
+			<button type="primary" disabled="{{setDisabled}}" bindtap="setCfg">设置参数</button>
+			<button type="primary" disabled="{{setDisabled}}" bindtap="relieveDevice">解绑门禁</button>
+		</view>
+	</view>
+
+	<!-- </view>
+	</form> -->
+</view>

@@ -1,0 +1,4 @@
+{
+  "navigationBarTitleText": "设备列表(下拉刷新)",
+      "enablePullDownRefresh": true
+}

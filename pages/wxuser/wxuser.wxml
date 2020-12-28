@@ -1,0 +1,17 @@
+<!--info.wxml-->
+<view class="contain">
+	<view class="page-body">
+		<view class="page-section">
+			<view class="page-body-info">
+				<view class="page-body-title">用户信息</view>
+				<block wx:if="{{hasUserInfo === true}}">
+					<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+					<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+				</block>
+			</view>
+		</view>
+	</view>
+	<view>
+		<text style="margin-left:80px;font-size:10px;">版权所有　广东能兴科技发展有限公司 V{{version}}</text>
+	</view>
+</view>

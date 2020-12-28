@@ -1,0 +1,21 @@
+<view class="page content" data-weui-theme="{{theme}}">
+	<view class="gateway">
+		<!-- <h2 class="weui-form__title">小网关</h2>
+		<textarea class="weui-textarea" disabled="false" maxlength="-1" style="height: 10em"
+			value="{{infoText}}"></textarea> -->
+
+		<view class="page__bd page__bd_spacing">
+			<view class="scan"> 
+				<text class="scan_text">识别码</text>
+				<input class="scan_input" name="wifissid" bindinput="bindKeyInput" placeholder="请输入识别码" value="{{sufBtName}}"
+					placeholder-class="weui-input__placeholder"></input>
+				<image src="../img/scan.png" mode="widthFix" class="scan_img" bind:tap="scanCode"></image>
+			</view>
+
+			<button disabled="{{searchDisabled}}" bindtap="searchDevice" class="gateway_btn">连接 </button>
+			<button disabled="{{setDisabled}}" bindtap="setCfg" class="gateway_btn">设置参数</button>
+			<!-- <button disabled="{{setDisabled}}" bindtap="relieveDevice" class="gateway_btn">解绑门禁</button> -->
+		</view>
+	</view>
+	<com-loading infoText="{{infoText}}" isShow="{{isShow}}" />
+</view>

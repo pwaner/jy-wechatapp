@@ -1,0 +1,22 @@
+{
+  "name": "iot-js-wechatma",
+  "version": "1.0.7",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwaner/wechatapp-JY-1211.git"
+  },
+  "author": "jx-huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwaner/wechatapp-JY-1211/issues"
+  },
+  "homepage": "https://github.com/pwaner/wechatapp-JY-1211#readme",
+  "dependencies": {
+    "weui-miniprogram": "^1.0.6"
+  }
+}

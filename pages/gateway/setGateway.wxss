@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+
+.gateway_btn {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: none;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  margin-top: 40rpx;
+  font-size: 38rpx;
+}

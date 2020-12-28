@@ -1,0 +1,6 @@
+@import "../device/device.wxss";
+
+.text_bottom {
+  margin: 20rpx auto;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+<view class="content">  
+ <view class="page-section">
+      <view class="page-section-title"></view>
+      <view class="textarea-wrp">
+        <text disabled="false" style="height: 30em" >{{infoText}}
+        </text>
+      </view>
+    </view>
+  <button  class="btn_bom" bindtap="cancel">取消</button>  
+  </view>  

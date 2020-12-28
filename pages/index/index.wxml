@@ -1,0 +1,19 @@
+<view class="contain">
+	<view class="page-body">
+		<view class="page-section">
+			<view class="page-body-info">
+				<block wx:if="{{isLogin === true}}">
+					<view class="page-body-title">用户信息</view>
+					<text class="userinfo-nickname">{{appSession.name}}</text>
+				</block>
+				<!-- <block wx:if="{{isLogin === false}}">
+					<text>需要你的微信账号与我方账号进行绑定，请允许获取微信账号信息，登录后可获取授权的门禁列表，进行开门操作。</text>
+					<view class="btn">
+						<button bindtap="goWxUser">立即登录</button>
+						<button bindtap="go">暂不登录</button>
+					</view>
+				</block> -->
+			</view>
+		</view>
+	</view>
+</view>

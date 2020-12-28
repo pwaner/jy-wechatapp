@@ -1,0 +1,91 @@
+<!--pages/setBell/relieveDevice.wxml-->
+
+<view class="page" data-weui-theme="{{theme}}">
+	<form bindsubmit="setting">
+		<view class="weui-form"> 
+			<view class="weui-form__text-area" style="height: 1em">
+				<h2 class="weui-form__title">设置参数</h2>
+				<textarea class="weui-textarea" disabled="false" maxlength="-1" style="height: 5em"
+					value="{{infoText}}"></textarea>
+			</view>
+			<view class="weui-form__control-area">
+				<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after" style="height: 10em">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 3em">门禁</label>
+					</view>
+					<view class="weui-cell__bd">
+						<picker bindchange="dvAccessChange" name="serial" range-key="{{'installPathFull'}}" value=''
+							range="{{dvAccessList}}">
+							<view class="weui-select">{{dvAccessList[dvIndex].installPathFull}}</view>
+						</picker>
+					</view>
+				</view>
+				<!-- <view class="weui-cell"> </view> -->
+
+				<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 4em">户编号</label>
+					</view>
+
+					<view class="weui-cell__bd">
+						<!-- <input class="weui-input" name="num" placeholder="填写户编号" type="number" bindblur="checkHouseBlur" value="{{estate.num}}" placeholder-class="weui-input__placeholder" />  -->
+
+						<picker bindchange="estateChange" name="estate" range-key="{{'fullName'}}" value='' range="{{estateList}}">
+							<view class="weui-select">{{estateList[esIndex].fullName}}</view>
+						</picker>
+
+					</view>
+				</view>
+				<view class="weui-cell weui-cell_active">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 5em">wifi名称</label>
+					</view>
+					<view class="weui-cell__bd">
+						<input class="weui-input" name="wifissid" placeholder="填写wifi名称" value="{{wifissid}}"
+							placeholder-class="weui-input__placeholder"></input>
+					</view>
+					<a class="weui-btn weui-btn_mini weui-btn_default" bindtap="getWifi">获取</a>
+				</view>
+				<view class="weui-cell weui-cell_active">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 5em">wifi密码</label>
+					</view>
+					<view class="weui-cell__bd">
+						<input class="weui-input" name="wifipsw" placeholder="填写wifi密码" placeholder-class="weui-input__placeholder"
+							value="{{wifipsw}}" />
+					</view>
+				</view>
+				<view class="weui-cell weui-cell_active">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 5em">音量</label>
+					</view>
+					<view class="weui-cell__bd">
+						<input class="weui-input" name="vol" placeholder="门铃音量范围 0-7 " type="number" value="{{vol}}"
+							placeholder-class="weui-input__placeholder" />
+					</view>
+				</view>
+				<view class="weui-cell weui-cell_active">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 5em">响铃时间</label>
+					</view>
+					<view class="weui-cell__bd">
+						<input class="weui-input" name="rit" placeholder="门铃音量范围20-250 " type="number" value="{{rit}}"
+							placeholder-class="weui-input__placeholder" />
+					</view>
+				</view>
+				<view class="weui-cell weui-cell_active">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 5em">通讯频道</label>
+					</view>
+					<view class="weui-cell__bd">
+						<input class="weui-input" name="ctc" placeholder="范围0-3，请慎重修改 " type="number" value="{{ctc}}"
+							placeholder-class="weui-input__placeholder" />
+					</view>
+				</view>
+			</view>
+			<view class="weui-form__opr-area">
+				<button style="margin: 30rpx 0" type="primary" formType="submit">提交</button>
+			</view>
+		</view>
+	</form>
+</view>

@@ -1,0 +1,6 @@
+.btn_bom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #00E5EE;
+  }

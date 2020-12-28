@@ -1,0 +1,7 @@
+<!--conpoments/loading/loading.wxml-->
+<view class="loading-model" hidden="{{isShow}}">
+    <view class="lm-box">
+        <image class="loading" src="http://m.qpic.cn/psc?/V51tK08W01DHek2QrM9N1kWNPe31gfWz/TmEUgtj9EK6.7V8ajmQrEKlLPigUFQwzGFnVdE4rDKuk4a8HI1DBigyO*kJH50FqWJR4hwz31Tdc*ZXlK2B4LFvMO76TQieKtJmMvHB8*QU!/b&bo=gACAAIAAgAACGT0!&rf=viewer_4" mode="aspectFill" />
+        <text class="loading-title">{{infoText}}</text>
+    </view>
+</view>

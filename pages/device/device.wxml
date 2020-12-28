@@ -1,0 +1,29 @@
+<view class="index">
+	<view class="index-bd">
+		<view class="kind-list">
+			<view wx:for="{{subDevices}}" wx:key="item">
+				<view class="kind-list-item">
+					<view id="{{item.serial}}" class="kind-list-item-hd">
+						<view class="kind-list-text" data-eid="{{item.eid}}" data-serial="{{item.serial}}"
+							data-deviceid="{{item.deviceId}}" data-installpathfull="{{item.installPathFull}}" bindtap="openDoor">
+							{{item.installPathFull}}</view>
+						<!--原方法名： openDoor createBLEConnection-->
+						<!-- <view class="kind-list-text">{{item.deviceId}}</view>
+						<view class="kind-list-text">{{item.eid}}</view> -->
+						<button class="btnImg" bindtap="getOpenPSW" data-eid="{{item.eid}}"
+							data-installpathfull="{{item.installPathFull}}">
+							<image class="kind-list-img" src="../img/key56.png"></image>
+						</button>
+						<!-- <image class="kind-list-img" src="../img/bell.png" data-eid="{{item.eid}}" data-installpathfull="{{item.installPathFull}}" bindtap="setBell"></image> -->
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- <view wx:for="{{devices}}" wx:key="index" data-device-id="{{item.deviceId}}" data-name="{{item.name || item.localName}}"
+	class="device_item" hover-class="device_item_hover">
+	<view style="font-size: 16px; color: #333;">{{item.name}}</view>
+	<view style="font-size: 10px">信号强度: {{item.RSSI}}</view>
+	<view style="font-size: 10px">UUID: {{item.deviceId}}</view>
+</view> -->
